@@ -13,9 +13,9 @@ def prime?(number)
     while i < divisors.size
       if number % divisors[i] == 0
         false
-      else
-        true
+        break
       end
+      i += 1
     end
   end
 end
