@@ -11,5 +11,7 @@ def prime?(number)
     divisors = (2..(number - 1)).to_a
     quotients = []
     divisors.each do |divisor|
-      
+      if number % divisor == 0
+        quotient = number / divisor
+        quotients << quotient 
       
