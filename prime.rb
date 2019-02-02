@@ -9,7 +9,7 @@ def prime?(number)
     true
   else
     divisors = (2..(number - 1)).to_a
-    i == 0
+    i = 0
     while i < divisors.size
       if number % divisors[i] == 0
         false
