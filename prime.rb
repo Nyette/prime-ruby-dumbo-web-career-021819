@@ -13,5 +13,16 @@ def prime?(number)
     divisors.each do |divisor|
       if number % divisor == 0
         quotient = number / divisor
-        quotients << quotient 
+        quotients << quotient
+      end
+    end
+    if quotients == []
+      true
+    else
+      false
+    end
+  end
+end
+
+
       
