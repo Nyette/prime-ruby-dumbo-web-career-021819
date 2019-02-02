@@ -8,6 +8,7 @@ def prime?(number)
   elsif number == 3
     true
   else
+    # number >= 4
     divisors = (2..(number - 1)).to_a
     quotients = []
     divisors.each do |divisor|
@@ -24,5 +25,3 @@ def prime?(number)
   end
 end
 
-
-      
